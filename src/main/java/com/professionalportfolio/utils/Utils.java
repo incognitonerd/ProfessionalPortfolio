@@ -58,7 +58,7 @@ public class Utils {
 		InputStream configFile = null;
 		try{
 			Properties prop = new Properties();
-			configFile = new FileInputStream(Constants.LOCAL_PROPERTIES_FILE_.getStr());
+			configFile = new FileInputStream(Constants.SERVER_PROPERTIES_FILE_.getStr());
 			if(configFile != null){
 				prop.load(configFile);
 			} else{
