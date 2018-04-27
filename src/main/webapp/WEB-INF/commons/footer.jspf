@@ -1,7 +1,7 @@
 </body>
 <footer class="footer">
 	<div class="container text-center">
-		<p>
+		<p class="text-muted text-dark">
 			Copyright <i class="fa fa-copyright"> &copy;</i> 2010-2018 IncognitoNerd LLC
 		</p>
 	</div>
