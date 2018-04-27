@@ -55,22 +55,24 @@ public class Utils {
 	public static String getEndpoint() throws IOException{
 		LOGGER.info("entered - " + Thread.currentThread().getStackTrace()[1].getMethodName());
 		String restfulEndpoint = "";
-		InputStream configFile = null;
+		InputStream appFile = null;
 		try{
+			// Properties prop = new Properties();
+			// appFile = new FileInputStream(Constants.LOCAL_PROPERTIES_FILE_.getStr());
+			appFile = new FileInputStream(Constants.SERVER_PROPERTIES_FILE_.getStr());
 			Properties prop = new Properties();
-			configFile = new FileInputStream(Constants.SERVER_PROPERTIES_FILE_.getStr());
-			if(configFile != null){
-				prop.load(configFile);
+			if(appFile != null){
+				prop.load(appFile);
 			} else{
-				throw new FileNotFoundException("property file '" + configFile + "' not found in the classpath");
+				throw new FileNotFoundException("property file '" + appFile + "' not found in the classpath");
 			}
 			restfulEndpoint = prop.getProperty("restfulEndpoint");
 			LOGGER.info("restfulEndpoint - " + restfulEndpoint);
 		} catch(Exception e){
 			LOGGER.info("Exception: " + e);
 		} finally{
-			if(configFile != null){
-				configFile.close();
+			if(appFile != null){
+				appFile.close();
 			}
 		}
 		return restfulEndpoint;
