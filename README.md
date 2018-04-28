@@ -1,4 +1,4 @@
-# ProfessionalPortfolio...
+# ProfessionalPortfolioApp
 
 
 Simple MVC App that displays and provides access to my personal projects. Users land on a home page that provides links to my most recent resume, github respository, and table of my public apps implementing a multitude of technologies I've crossed in my career. The table of apps displays each app's name, description, technologies used, and link to the apps github repository.
