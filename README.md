@@ -16,13 +16,13 @@ Build Management And Automation Tool -
 * Maven - project management framework for compilation, packaging, simplifies and standardizes a project's build process, a default/standard project structure, dependency management, relies on internet connection. Based on the pom (project object model)  
 
 Rest Call -
-* Spring Web - used to consume an endpoint that returns a list of my projects in another application 
+* Spring Web - used to consume an endpoint in another application of mine that returns a list of my projects
 
 Wiring the technologies together -  
-* Spring Boot for java enterprise projects  - develop enterprise applications using pojos instead of beans, forces programmers to use the best-known practices. Handles instantiating classes (dependency injection).  
+* Spring Boot - develop enterprise applications using pojos instead of beans, forces programmers to use the best-known practices. Handles instantiating classes (dependency injection).  
 
 Frontend -   
-* Jsp - used to contain the frontend code and respond to get request
+* Jsp - used to contain the frontend code and respond to request
 * Jstl - used to perform operations on data passed in by the request 
 * CSS - styled the page 
 * HTML5 - structured the page 
