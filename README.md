@@ -23,7 +23,7 @@ Wiring the technologies together -
 
 Frontend -   
 * Jsp - used to contain the frontend code and respond to get request
-* Jstl - used to perform operations on daae passed in by the request 
+* Jstl - used to perform operations on data passed in by the request 
 * CSS - styled the page 
 * HTML5 - structured the page 
 * Bootstrap - made the page responsive
