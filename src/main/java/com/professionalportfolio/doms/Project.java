@@ -6,6 +6,9 @@ public class Project {
 	private String appUrl;
 	private String githubUrl;
 	
+	public Project(){
+	}
+	
 	public Project(String name, String description, String technologies, String appUrl, String githubUrl){
 		this.name = name;
 		this.description = description;

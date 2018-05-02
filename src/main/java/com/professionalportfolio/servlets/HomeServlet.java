@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import com.professionalportfolio.doms.Project;
-import com.professionalportfolio.services.ProjectsService;
+import com.professionalportfolio.services.impl.ProjectsServiceImpl;
 import com.professionalportfolio.utils.Constants;
 
 @WebServlet(urlPatterns = "/home")
@@ -21,8 +21,8 @@ public class HomeServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException{ // req.setAttribute("activities", activities.getActivities()); //
 		LOGGER.info("entered - " + Thread.currentThread().getStackTrace()[1].getMethodName());
 		try{
-			ProjectsService prjcts = new ProjectsService();
-			List<Project> myProjects = prjcts.getProjects();;
+			ProjectsServiceImpl prjcts = new ProjectsServiceImpl();
+			List<Project> myProjects = prjcts.getProjects();
 			req.setAttribute("projects", myProjects);
 		} catch(Exception e){
 			LOGGER.info("africa - " + e.getMessage());
