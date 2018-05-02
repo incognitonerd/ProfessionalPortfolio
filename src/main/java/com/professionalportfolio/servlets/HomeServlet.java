@@ -12,7 +12,7 @@ import com.professionalportfolio.doms.Project;
 import com.professionalportfolio.services.ProjectsService;
 import com.professionalportfolio.utils.Constants;
 
-@WebServlet(urlPatterns = "/home.do")
+@WebServlet(urlPatterns = "/home")
 public class HomeServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private static final Logger LOGGER = LoggerFactory.getLogger(HomeServlet.class);
