@@ -1,5 +1,5 @@
 <%@include file="../commons/header.jspf"%>
-<%@include file="../commons/nav.jspf"%>
+<%@include file="../commons/navHomepage.jspf"%>
 <div class="container">
 	<h1>Personal Projects</h1>
 	<table class="table table-striped">
